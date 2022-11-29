@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-import { WEIGHTS } from '../../constants';
+import { WEIGHTS, MEDIAQUERIES } from '../../constants';
 
 import Breadcrumbs from '../Breadcrumbs';
 import Select from '../Select';
@@ -51,6 +51,10 @@ const Wrapper = styled.div`
 
 const LeftColumn = styled.div`
   flex-basis: 248px;
+
+  @media ${MEDIAQUERIES.tabletAndSmaller} {
+    display: none;
+  }
 `;
 
 const MainColumn = styled.div`
